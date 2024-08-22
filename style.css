@@ -1,0 +1,206 @@
+/* Apply base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('Hero.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.hero nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.hero .logo img {
+    width: 75px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.hero .left-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    width: 30%;
+    height: fit-content;
+}
+
+.left-links a {
+    text-decoration: none;
+    color: #acacac;
+}
+
+.langs {
+    display: flex;
+    list-style: none;
+}
+
+.right-links {
+    display: flex;
+    margin-top: 40px;
+    width: 15%;
+    justify-content: space-between;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.right-links li a {
+    text-decoration: none;
+    color: #acacac;
+}
+
+.second-nav {
+    display: flex;
+    width: 70%;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.second-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.second-nav li {
+    transition: 0.5s;
+}
+
+.second-nav li:hover,
+.second-nav li a:hover {
+    color: greenyellow;
+    transform: scale(1.2);
+}
+
+/* Header Styling */
+.header {
+    position: absolute;
+    top: 50%;
+    font-size: 5em;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Down Arrow Animation */
+.down {
+    color: white;
+    font-size: 7em;
+    position: absolute;
+    bottom: 0;
+    animation: down 1s infinite;
+}
+
+@keyframes down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Second Section */
+.second {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-image: url('GrandMercedes.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.second h3 {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    font-weight: 200;
+}
+
+.second h1 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 2.5em;
+}
+
+.second button {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.second button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Third Section */
+.third {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    font-size: 3em;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.social li {
+    transition: 0.5s;
+}
+
+.social li:hover {
+    transform: scale(1.4);
+}
